@@ -32,7 +32,7 @@ def find_tool_by_name(tools: List[Tool], tool_name: str) -> Tool:
     raise ValueError(f"Tool with name '{tool_name} not found.'")
 
 
-if __name__ == "__main__":
+def main():
     tools = [get_text_length]
 
     template = """
@@ -104,3 +104,7 @@ if __name__ == "__main__":
 
     # TODO difference between template= and template_format=
     # TODO no outro codigo eu utilizei o construtor, nao o metodo from_template. quais as diferencas
+
+
+if __name__ == "__main__":
+    main()
